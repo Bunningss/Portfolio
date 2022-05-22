@@ -20,15 +20,13 @@
     &.active {
 
         .bar:nth-child(1) {
-            transform: rotate(45deg) translate(-3px, -1px);
-            transform-origin: left;
-            width: 100%;
+            transform: rotate(45deg) translate(0px , 9.5px);
         }
         .bar:nth-child(2) {
-            transform: rotate(-45deg) translate(-2px, -4px);
+            transform: rotate(-45deg);
         }
         .bar:nth-child(3) {
-            opacity: 0;
+            transform: rotate(45deg) translate(-3px, 0px);
         }
     }
 
@@ -37,7 +35,7 @@
         width: 100%;
         height: 3px;
         border-radius: 10px;
-        transition: all .3s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+        transition: all .5s cubic-bezier(0.62, 1.44, 0.6, -1.4);
 
         &:nth-child(1) {
             width: 75%;
