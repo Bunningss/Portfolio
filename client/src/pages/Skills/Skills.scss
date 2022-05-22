@@ -1,0 +1,71 @@
+@import '../../global.scss';
+
+.skills {
+    background-color: var(--background);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    @include laptop {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .skillsLeft {
+        width: 50%;
+        padding: 10px;
+
+        @include laptop {
+            width: 100%;
+            padding: 20px 30px;
+        }
+
+        .skillsHeader {
+
+            span {
+                display: inline-block;
+                font-size: 80px;
+                font-weight: 800;
+                color: var(--font);
+                transition: all .5s ease;
+
+                @include mobile {
+                    font-size: 40px;
+                }
+
+                &:hover {
+                    animation: jumpy 1s both;
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+    .skillsRight {
+        width: 50%;
+        padding: 10px;
+
+        .chart {
+
+            footer {
+
+                div {
+                    animation: slowFill 1.5s linear;
+
+                    @keyframes slowFill {
+                        0% {
+                            width: 0;
+                        }
+                        100% {
+                            width: dd;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include laptop {
+            width: 100%;
+            padding: 20px 30px;
+        }
+    }
+}

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: var(--backgroundLight);
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --backgroundLight: #212529;
+    --background: #0e1212;
+    --primary: #682AE9;
+    --font: #ffffff;
+    --comment: #9e9696;
+    --lobster: 'Lobster Two', cursive;
+}
+
+ @-webkit-keyframes jumpy {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes jumpy {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+
+  $lappyOriginal: 1500px;
+  @mixin lappy {
+    @media (max-width: #{$lappyOriginal}) {
+      @content
+    }
+  }
+  $logoGone: 1270px;
+  @mixin gone {
+    @media (max-width: #{$logoGone}) {
+      @content
+    }
+  }
+  
+  $laptopsml: 1024px;
+
+  @mixin laptop {
+    @media (max-width: #{$laptopsml}) {
+      @content
+    }
+  }
+
+  $tablet: 768px;
+
+  @mixin tablet {
+    @media (max-width: #{$tablet}) {
+      @content
+    }
+  }
+
+  $mobile: 500px;
+
+  @mixin mobile {
+    @media (max-width: #{$mobile}) {
+      @content
+    }
+  }
+
+  .sectionPadding {
+    padding: 0 0 0 60px;
+
+    @include laptop {
+      padding: 0 0 0 0;
+    }
+}
+
+.marginRight {
+    margin: 0 15px 0 0;
+}

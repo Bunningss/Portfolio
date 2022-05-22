@@ -1,0 +1,104 @@
+@import '../../global.scss';
+
+.about {
+    height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+
+    @include mobile {
+        height: auto;
+    }
+
+    .aboutLeft {
+        width: 50%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include tablet {
+            width: 100%;
+            padding: 20px 30px;
+        }
+
+        .aboutHeader {
+            margin: 15px 0;
+
+            span {
+                display: inline-block;
+                font-size: 80px;
+                font-weight: 800;
+                color: var(--font);
+                transition: all .5s ease;
+
+                @include mobile {
+                    font-size: 40px;
+                }
+
+                &:hover {
+                    animation: jumpy 1s both;
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+
+    .aboutRight {
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include tablet {
+            width: 100%;
+            padding: 20px 30px;
+        }
+
+        @include mobile {
+            height: 80vh;
+        }
+
+
+        &:hover {
+
+            .expertise:nth-child(1) {
+                transform: translateZ(150px);
+            }
+            .expertise:nth-child(2) {
+                transform: translateZ(1px);
+            }
+            .expertise:nth-child(3) {
+                transform: translateZ(-150px);
+            }
+            .expertise:nth-child(4) {
+                transform: translateZ(170px);
+            }
+            .expertise:nth-child(5) {
+                transform: translateZ(40px);
+            }
+            .expertise:nth-child(6) {
+                transform: translateZ(90px);
+            }
+            .expertise:nth-child(7) {
+                transform: translateZ(36px);
+            }
+            .expertise:nth-child(8) {
+                transform: translateZ(120px);
+            }
+            .expertise:nth-child(9) {
+                transform: translateZ(-14px);
+            }
+            .expertise:nth-child(10) {
+                transform: translateZ(30px);
+            }
+        }
+    }
+}
