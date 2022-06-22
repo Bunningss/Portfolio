@@ -1,0 +1,14 @@
+.figure {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 100px;
+    height: fit-content;
+    width: fit-content;
+    color: var(--fontPrimary);
+    font-family: var(--lobsterFont);
+    font-size: 770px;
+    transform: rotate(15deg);
+     text-shadow:0 1px 0 #682ae9, 0 2px 0 #682ae9, 0 3px 0 #682ae9, 0 4px 0 #682ae9, 0 5px 0 #682ae9, 0 6px 0 #682ae9, 0 7px 0 #682ae9, 0 8px 0 #682ae9, 0 9px 0 #682ae9, 0 50px 30px rgba(0, 0, 0, 0.3);
+}

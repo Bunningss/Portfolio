@@ -1,0 +1,13 @@
+.btnContainer {
+
+    .btnPrimary {
+        padding: 15px 40px;
+        font-size: 16px;
+        color: var(--accentColor);
+        border: 1px solid var(--accentColor);
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+        margin: 10px 0;
+    }
+}

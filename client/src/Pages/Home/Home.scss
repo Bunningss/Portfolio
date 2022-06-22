@@ -1,0 +1,14 @@
+.home {
+    background-color: var(--backgroundPrimary);
+    height: 100vh;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+
+    .textArea {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
