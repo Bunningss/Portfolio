@@ -1,8 +1,5 @@
 .letter {
     font-size: 70px;
     color: var(--fontPrimary);
-
-    &:hover {
-        color: red;
-    }
+    width: fit-content;
 }

@@ -1,0 +1,10 @@
+.card {
+    min-height: 80vh;
+    width: 500px;
+    background-color: var(--backgroundSecondary);
+    border-radius: 10px;
+    box-shadow: 0 20px 20px var(--accentColor), 0px 0px 50px var(--accentColor);
+    padding: 0 10px;
+    transform-style: preserve-3d;
+    position: relative;
+}

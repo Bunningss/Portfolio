@@ -5,10 +5,10 @@ import TextZone from '../../Components/TextZone/TextZone';
 import './Home.scss';
 
 const Home = () => {
-  const text = "Hello,\nI'm Mahmud\nWeb Developer";
+  const text = `Hello\nI'm Mahmud,\nWeb Developer`;
   const textZone = "front end developer / designer";
   return (
-    <div className='home sectionMargin'>
+    <div className='home default'>
       <div className="textArea">
         <TextAnimate text={text}/>
         <TextZone text={textZone}/>

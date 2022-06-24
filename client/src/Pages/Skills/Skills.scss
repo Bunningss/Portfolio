@@ -1,0 +1,17 @@
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    .instruction {
+        position: absolute;
+        color: var(--accentColor);
+        top: 40px;
+        right: 40px;
+        font-size: 16px;
+        text-transform: capitalize;
+        animation: blink 2s infinite;
+    }
+}

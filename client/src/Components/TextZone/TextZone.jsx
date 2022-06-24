@@ -1,8 +1,12 @@
 import './TextZone.scss';
+import { Link } from 'react-router-dom';
 
-const TextZone = ({ text }) => {
+const TextZone = ({ text, href, linkText }) => {
   return (
-    <div className='textZone'>{text}</div>
+    <>
+      <p className='textZone'>{text}</p>
+      <Link className='textZoneLink' to={href ? href : ""}>{linkText}</Link>
+    </>
   )
 }
 

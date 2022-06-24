@@ -18,7 +18,7 @@
             color: var(--fontPrimary);
             font-size: 60px;
             text-align: center;
-            text-shadow:0 1px 0 #682ae9, 0 2px 0 #682ae9, 0 3px 0 #682ae9, 0 4px 0 #682ae9, 0 5px 0 #682ae9, 0 6px 0 #682ae9, 0 7px 0 #682ae9, 0 8px 0 #682ae9, 0 9px 0 #682ae9, 0 50px 30px rgba(0, 0, 0, 0.3);
+            text-shadow:0 1px 0 var(--accentColor), 0 2px 0 var(--accentColor), 0 3px 0 var(--accentColor), 0 4px 0 var(--accentColor), 0 5px 0 var(--accentColor), 0 6px 0 var(--accentColor), 0 7px 0 var(--accentColor), 0 8px 0 var(--accentColor), 0 9px 0 var(--accentColor), 0 50px 30px rgba(0, 0, 0, 0.3);
             transition: all .3s ease;
             cursor: pointer;
 
@@ -31,7 +31,7 @@
     .sidebarList {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
 
         a {
 

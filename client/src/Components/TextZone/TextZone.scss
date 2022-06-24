@@ -2,5 +2,18 @@
     font-size: 16px;
     color: var(--fontSecondary);
     text-transform: capitalize;
-    margin: 20px 0;
+    margin: 10px 0;
+}
+
+.textZoneLink {
+    width: fit-content;
+    margin: 10px 0;
+    color: var(--accentColor);
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: all .3s ease;
+
+    &:hover {
+        opacity: .6;
+    }
 }
