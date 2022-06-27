@@ -1,0 +1,55 @@
+@import '../../global.scss';
+
+.hamburger {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+    display: none;
+
+    @include mobile {
+        display: flex;
+    }
+
+    &.enabled {
+        z-index: 10;
+
+        .line {
+
+            &:nth-child(1) {
+                transform: rotate(45deg) translate(3.7px, -.3px);
+            }
+
+            &:nth-child(2) {
+                transform: rotate(-45deg);
+            }
+
+            &:nth-child(3) {
+                transform: rotate(45deg) translate(0px, -7px);
+            }
+        }
+    }
+
+    .line {
+        height: 3px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: var(--fontPrimary);
+        transition: all .3s ease;
+
+        &:nth-child(1) {
+            width: 25%;
+        }
+        &:nth-child(2) {
+            width: 100%;
+        }
+        &:nth-child(3) {
+            width: 75%;
+        }
+    }
+}

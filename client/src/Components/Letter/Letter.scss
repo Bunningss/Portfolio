@@ -1,5 +1,11 @@
+@import '../../global.scss';
+
 .letter {
     font-size: 70px;
     color: var(--fontPrimary);
     width: fit-content;
+
+    @include mobile {
+        font-size: 40px;
+    }
 }

@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .sidebar {
     position: absolute;
     top: 0;
@@ -7,6 +9,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include mobile {
+        display: none;
+    }
 
     .logoContainer {
         position: absolute;

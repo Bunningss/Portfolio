@@ -30,7 +30,7 @@ export const sidebarData = [
     },
 ];
 
-export const aboutText = "hdfsdgfiyshfjky eyugfuyegfi weuytuegfid tgd";
+export const aboutText = "Highly motivated and experienced web developer with vast skills and knowledge of HTML5, SASS/SCSS, NodeJS, Express, MongoDB, ReactJS and UI/UX design.";
 
 export const expertiseData = [
     {
