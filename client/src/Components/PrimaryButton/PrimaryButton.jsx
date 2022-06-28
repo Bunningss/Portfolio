@@ -1,11 +1,8 @@
 import './PrimaryButton.scss';
-import { Link } from 'react-router-dom';
 
-const PrimaryButton = ({ text, href }) => {
+const PrimaryButton = ({ text, onClick }) => {
   return (
-    <Link className="btnContainer" to={href}>
-        <button className="btnPrimary">{text}</button>
-    </Link>
+        <button onClick={onClick} className="btnPrimary">{text}</button>
   )
 }
 

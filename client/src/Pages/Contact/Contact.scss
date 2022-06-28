@@ -1,0 +1,43 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .contactForm {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            border: none;
+            outline: none;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #f5f5f7;
+        }
+
+        .formTop {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            input {
+                width: 50%;
+            }
+        }
+
+        input {
+            margin: 5px 0;
+        }
+
+        textarea {
+            padding: 15px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            background-color: #f5f5f7;
+        }
+    }
+}
